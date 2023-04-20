@@ -14,10 +14,10 @@ class Verification{
     this.list  = list
     this.k     = k
     this.count = 0
-    this.programm(this.list)
+    this.program(this.list)
   }
 
-  programm(list,n=0){
+  program(list,n=0){
     let newlist = [...list]
     newlist.splice(n,1)
     for(let i=0; i < newlist.length; i++){
@@ -28,7 +28,7 @@ class Verification{
         return console.log(false+`, number of comparisons: ${this.count}`)
       }
     }
-    return this.programm(this.list,n+1)
+    return this.program(this.list,n+1)
   }
 }
 
